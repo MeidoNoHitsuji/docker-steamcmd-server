@@ -16,7 +16,7 @@ ENV WORLD_NAME="world1"
 ENV GAME_NAME="template"
 ENV GAME_PARAMS="template"
 ENV GAME_PORT=27015
-ENV VALIDATE=""
+ENV VALIDATE="false"
 ENV UMASK=000
 ENV UID=99
 ENV GID=100
@@ -33,6 +33,7 @@ RUN mkdir $DATA_DIR && \
 	ulimit -n 2048
 
 ADD /scripts/ /opt/scripts/
+ADD /crack/ /opt/crack/
 RUN chmod -R 770 /opt/scripts/
 
 #Server Start

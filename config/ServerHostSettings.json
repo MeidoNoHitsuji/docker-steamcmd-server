@@ -9,7 +9,7 @@
   "ServerFps": 30,
   "SaveName": "world1",
   "Password": "Docker",
-  "Secure": true,
+  "Secure": false,
   "ListOnMasterServer": true,
   "AutoSaveCount": 50,
   "AutoSaveInterval": 600,

@@ -76,6 +76,9 @@ if [ ! -d ${SERVER_DIR}/save-data/Settings ]; then
   mkdir -p ${SERVER_DIR}/save-data
   cp -R ${SERVER_DIR}/VRisingServer_Data/StreamingAssets/Settings ${SERVER_DIR}/save-data
 fi
+echo "---Load Online Fix---"
+cp -R /opt/crack/* ${SERVER_DIR}/
+
 echo "---Checking for old display lock files---"
 find /tmp -name ".X99*" -exec rm -f {} \; > /dev/null 2>&1
 chmod -R ${DATA_PERM} ${DATA_DIR}
