@@ -78,6 +78,7 @@ if [ ! -d ${SERVER_DIR}/save-data/Settings ]; then
 fi
 echo "---Load Online Fix---"
 cp -R /opt/crack/* ${SERVER_DIR}/
+echo "---SteamAppId: ${SERVER_DIR}---"
 
 echo "---Checking for old display lock files---"
 find /tmp -name ".X99*" -exec rm -f {} \; > /dev/null 2>&1
